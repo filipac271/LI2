@@ -1,13 +1,13 @@
-#ifndef _BESTRUTURAS_H_
-#define _BESTRUTURAS_H_
+#ifndef _CESTRUTURAS_H_
+#define _CESTRUTURAS_H_
 
 #include <stddef.h>
 #include <stdio.h>
 #include <wchar.h>
 #include <locale.h>
 
-#define Maximo_Cartas 15
-#define Maximo_linhas 100
+#define Maximo_Cartas 14    
+#define Maximo_linhas 400
 
 // Definição da estrutura para representar uma carta
 typedef struct {
