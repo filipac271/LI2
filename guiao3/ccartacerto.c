@@ -168,11 +168,11 @@ void eliminar_elementos(int t, int linhas[], wchar_t caracteres3[][Maximo_linhas
         int num_cartas_ultima = barraylength[t][linhas[t] + 1];
         
         int m = 0; // Inicializa o índice m
-        int caracteres_removidos;
+        int caractere_removido;
         
         // Verifica se há cartas na primeira linha antes de entrar no loop while
         while (num_cartas_primeira > 0 && m < num_cartas_primeira) { // Usa um loop while para controlar m
-            caracteres_removidos = 0; // Contador de caracteres removidos
+            caractere_removido = 0; 
             int found_match = 1;
 
             for (int j = 0; j < num_cartas_ultima && found_match; j++) {
@@ -184,18 +184,18 @@ void eliminar_elementos(int t, int linhas[], wchar_t caracteres3[][Maximo_linhas
                     }
                     barraylength[t][0]--; // Decrementar o comprimento da primeira linha
                     num_cartas_primeira--;
-                    caracteres_removidos++; // Incrementa o contador de caracteres removidos
+                    caractere_removido++; // Incrementa o contador de caractere removido
                     found_match = 0;
                 }
             }
 
-            // Se algum caractere foi removido, ajuste o índice m
-            if (caracteres_removidos == 0) {
+            // Se nenhum caractere foi removido, ajuste o índice m
+            if (caractere_removido == 0) {
                 m++;
             } else {
                 // Se o caractere foi removido, não avance m
                 // pois o próximo caractere está agora na posição m
-                caracteres_removidos = 0; // Redefine o contador de caracteres removidos
+                caractere_removido = 0; // Redefine o contador de caracteres removidos
             }
         }
         
