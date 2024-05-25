@@ -215,7 +215,7 @@ void ordenar_e_analisar (int arraylength[] ,int num_linhas,Carta cartas[][Maximo
 }
 
 
-/*
+
 int main() {
     setlocale(LC_CTYPE, "C.UTF-8");
     int num_linhas;
@@ -240,4 +240,3 @@ int main() {
 
     return 0;
 }
-*/

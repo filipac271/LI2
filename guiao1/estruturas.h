@@ -6,7 +6,7 @@
 #include <wchar.h>
 #include <locale.h>
 
-#define Maximo_Cartas 14
+#define Maximo_Cartas 56
 
 // Definição da estrutura para representar uma carta
 typedef struct {

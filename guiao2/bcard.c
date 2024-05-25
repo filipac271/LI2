@@ -5,9 +5,6 @@
 #include <locale.h>
 
 
-#define Maximo_Cartas 14
-#define Maximo_linhas 100
-
 
 int ultimo_algarismo(int unicode) {
     return unicode % 0x10; // Divisão pelo valor de base hexadecimal (10)
